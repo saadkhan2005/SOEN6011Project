@@ -1,0 +1,65 @@
+\documentclass{article}
+% \usepackage{arxiv}
+	\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+		\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+\title{\textbf {A Logarithm Algorithm}}
+
+
+
+\begin{document}
+\maketitle
+
+% keywords can be removed
+\section{Description}
+Firstly, program reads two inputs 'x' defined as number for which we need to find log and 'b' as base. The function checkInput(x,b) checks both of the inputs if it is correct or not depending on the range. Finally, it goes into the recursive function i.e findLog(x,b) and finds the logarithm of 'x'.
+
+\section{Psuedo Code}
+\begin{itemize}
+\item\textbf{	Algorithm 1 - Log(main func)}\\
+begin:  \\
+1. READ x as number, READ b as base of log \\
+2. checkInput(x,b) \\
+3. SET returned output=findLog(x,b) \\
+4. PRINT output \\
+end
+
+
+\item\textbf{	Algorithm 2: checkInput(x,b)} \\
+begin: \\
+1.IF b,x ∈ 0 to $\infty$ \\
+2. continue with processing \\
+3. else \\
+4. print error and take new inputs end \\
+end
+
+\item\textbf{	Algorithm 3: findLog(b,x)} \\
+begin: \\
+1.IF x<b\\ 
+2. return 0\\ 
+3. else \\
+4. COMPUTE and return sum of 1 and repeat function myLog(x/b, b) ) i.e 1+ myLog(x/b, b)\\
+end\\
+
+ 
+1. For Input : use READ \\
+2. For output : use PRINT \\
+3. For calculation : use COMPUTE \\
+4. For Initialize: use SET \\
+5. For Add one: use INCREMENT\\
+\end{itemize}
+% Domain : $(0,\infty)$
+% Range:  $(-\infty,\infty)$
+
+% \begin{itemize}
+% \item	Product:			log$_{b}(xy)  = log_{b}(x)+ log_{b}$(y)
+% \item	Ratios:			log$_{b}(x/y) = log_{b}(x)- log_{b}$(y)
+% \item	Power:			log$_{b}(xy)   = y log_{b}$(x)
+% \end{itemize}
+
+
+
+\end{document}
