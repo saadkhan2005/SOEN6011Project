@@ -1,0 +1,113 @@
+\documentclass{article}
+
+	\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+		\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+\title{\textbf {Logarithm Function}}
+
+
+
+\begin{document}
+\maketitle
+
+\section{Logarithm Description}
+\subsection{Introduction}
+
+The logarithm in mathematics is the reverse or inverse of another function. We can find logarithm of a number ‘x’ that is it is the exponent of the number ‘b’ which produces ‘x’. For instance if we take Log$_{b}(x)$ then the "logarithm to base 10" of 1000 is 3. So here ‘b’ is base. When b=10 it is a common logarithm. In programming we can use logarithmic exponents because it simplifies complex mathematical calculations. Computer developers use logarithms in computer function formulas to create specific software program outcomes, such as the creation of graphs that compare statistical data.
+
+
+\begin{equation}
+Log_{10}(1000)=3
+\end{equation}
+\subsection{Domain and Range}
+The domain of the logarithmic function y=logbx is the set of positive real numbers and the range is the set of real numbers.
+Domain : $(0,\infty)$
+Range:  $(-\infty,\infty)$
+\subsection{Rules}
+Logarithms are commonplace in scientific formulae, and in measurements of the complexity of algorithms and of geometric objects called fractals. 
+\begin{itemize}
+\item	Product:			log$_{b}(xy)  = log_{b}(x)+ log_{b}$(y)
+\item	Ratios:			log$_{b}(x/y) = log_{b}(x)- log_{b}$(y)
+\item	Power:			log$_{b}(xy)   = y log_{b}$(x)
+\end{itemize}
+
+
+
+\begin{document}
+\maketitle
+\newpage 
+% keywords can be removed
+\section{Logarithm Requirements}
+\subsection{General}
+This function requires a number 'n' and base 'b' to calculate the logarithm. The requirements should be real numbers. 
+\subsection{Requirement Construct}
+The requirements and the inputs will be checked and validated by the function and if something is missing or wrong then system will retake the inputs on the basis of implementation.
+
+
+\subsection{Functional Requirements}
+For Log$_{b}$(x) we have to take 2 inputs in Java program. \\
+1.	First input is x.  \\
+2.	The second input b that is subscripted on the “log” part is there to tell us what the base is as this is an important piece of information.\\
+3.	We need a recursive function to implement the logic.
+\subsection{Non-Functional Requirements}
+\subsubsection{Usability}
+1. The system should provide preventative error handling for user
+2. The system should have prompt message for complex operation
+\subsubsection{Performability}
+1. The system should be able to perform the operation in no time i.e 0.01sec
+\subsection{Assumptions}
+User will be able to find the logarithm by taking input of base and a number. The expected result for Log$_{b}(x^n$) should be 'n'.
+\newpage
+\section{Logarithm Algorithm}
+\subsection{Description}
+Firstly, program reads two inputs 'x' defined as number for which we need to find log and 'b' as base. The function checkInput(x,b) checks both of the inputs if it is correct or not depending on the range. Finally, it goes into the recursive function i.e findLog(x,b) and finds the logarithm of 'x'.
+
+
+\subsection{Psuedo Code}
+\begin{itemize}
+\item\textbf{	Algorithm 1 - Log(main func)}\\
+begin:  \\
+1. READ x as number, READ b as base of log \\
+2. checkInput(x,b) \\
+3. SET returned output=findLog(x,b) \\
+4. PRINT output \\
+end
+
+
+\item\textbf{	Algorithm 2: checkInput(x,b)} \\
+begin: \\
+1.IF b,x ∈ 0 to $\infty$ \\
+2. continue with processing \\
+3. else \\
+4. print error and take new inputs end \\
+end
+
+\item\textbf{	Algorithm 3: findLog(b,x)} \\
+begin: \\
+1.IF x<b\\ 
+2. return 0\\ 
+3. else \\
+4. COMPUTE and return sum of 1 and repeat function myLog(x/b, b) ) i.e 1+ myLog(x/b, b)\\
+end\\
+
+ 
+1. For Input : use READ \\
+2. For output : use PRINT \\
+3. For calculation : use COMPUTE \\
+4. For Initialize: use SET \\
+5. For Add one: use INCREMENT\\
+\end{itemize}
+
+\section{References}
+
+ [1]"Logarithm", En.wikipedia.org, 2019. [Online]. Available: https://en.wikipedia.org/wiki/Logarithm. [Accessed: 06- Jul- 2019].
+ 
+ $\\$
+ [2] Techwalla, 2019. [Online]. Available: https://www.techwalla.com/articles/uses-of-logarithms-in-computers. [Accessed: 06- Jul- 2019].
+
+\end{document}
+
+\end{document}
