@@ -1,0 +1,79 @@
+\documentclass{article}
+
+	\addtolength{\oddsidemargin}{-.875in}
+	\addtolength{\evensidemargin}{-.875in}
+		\addtolength{\textwidth}{1.75in}
+
+	\addtolength{\topmargin}{-.875in}
+	\addtolength{\textheight}{1.75in}
+\title{\textbf {Deliverable 3}}
+
+
+
+\begin{document}
+\maketitle
+\section*{\centering\textcolor{Code Review of F5 }}
+
+\section{Overview}
+The code review has been conducted of the Gamma Function program. Manual review has been done as well as automatic review has been done using CheckStyle Plugin. 
+\section{Code Formatting}
+There are the following points that has been observed while going through the code
+\begin{itemize}
+\item Use of alignment (left margin) has not been followed properly.
+\item There are a lot of extra white spaces in the code.
+\item Proper naming conventions (Pascal, CamelCase etc.) have been followed.
+\item There are unnecessary comments in the code.
+\item The readability of the code is very complex because the names of the function should be descriptive about the nature of the functionality being implemented in the method.
+\item There are 1118 CheckStyle violation markers has been found in the code
+\item The code is exceeding the limit of average LOC per class. We can see that the code is more than of 400 lines.
+\end{itemize}
+
+
+\section{Architecture}
+It does not follow any separation of concerns principle. An architecture should have been implemented because of the maintainability purpose.
+\section{Programming Code Style}
+\begin{itemize}
+\item The code was seen to have a lot of hard coded values. Enums or property files should have been used for hard coded values
+\item It can be seen there are many if/else clauses for single line of statement. Ternary operators should have been used instead of that.
+\item There are some meaningful documentation in source code.
+\end{itemize}
+
+\section{Non-Functional Requirements}
+\begin{itemize}
+
+ \item The same code has been repeated more than twice.
+ \item Since the class file has more than 400 LOC henceforth it is tough to analyze and maintainability is affected.
+ 
+
+\end{itemize}
+
+\section{Quality attributes}
+\begin{itemize}
+
+\item The program implements unnecessary required functionality. Addition, Subtraction, Multiplication and Division implementations have been done that was not required which is adding the complexity of the code.
+\item The program is functionally correct.
+\item The program provides preventative error handling for user. It prompts message for complex operation.
+\end{itemize}
+
+% keywords can be removed
+\section*{\centering\textcolor{Testing Review of F6 }}
+
+\section{Testing Results}
+\begin{itemize}
+
+\item Junit5 framework has been used for testcases.
+\item All the test cases have been passed.
+\item The bulit-in function 'assertEquals' has been used to check all the responses.
+\end{itemize}
+
+
+\section{References}
+\begin{itemize}
+ \item Gee, T. (2019). Code review best practices | The ultimate software development tool. [online] Fogbugz.com. Available at: https://www.fogbugz.com/blog/code-review-best-practices/ [Accessed 2 Aug. 2019].
+
+\item Evoke Technologies. (2019). Code Review Checklist – To Perform Effective Code Reviews. [online] Available at: https://www.evoketechnologies.com/blog/code-review-checklist-perform-effective-code-reviews/ [Accessed 2 Aug. 2019].
+
+\item GitHub. (2019). saadkhan2005/SOEN6011Project. [online] Available at:$\\$ https://github.com/saadkhan2005/SOEN6011Project [Accessed 29 Jul. 2019].
+\end{itemize}
+\end{document}
+
